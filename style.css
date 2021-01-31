@@ -81,13 +81,11 @@ header {
    header nav {
        display: none;
    }
+   #button {
+    font-size: 10px;
+    padding: 12px 20px;
+    margin-top: 20px;
 }
-
-@media only screen and (max-width: 480px) {
-    #button {
-        font-size: 10px;
-        padding: 12px 20px;
-    }
 }
 
 /* Main Section */
