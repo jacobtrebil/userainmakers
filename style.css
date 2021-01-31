@@ -10,6 +10,7 @@ html {
 
 #logo {
     margin: 13px 0px 0px 15px;
+    width: 220px;
 }
 
 header #logo3 {
@@ -80,6 +81,9 @@ header {
 @media only screen and (max-width: 350px) {
    header nav {
        display: none;
+   }
+   #logo {
+       width: 160px;
    }
 }
 
