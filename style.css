@@ -81,7 +81,7 @@ header {
     #button {
     font-size: 10px;
     padding: 12px 20px;
-    margin-top: 20px;
+    margin-top: 24px;
 }
 }
 
@@ -216,6 +216,10 @@ p {
     margin-top: 17px;
 }
 
+#lpl {
+    margin-top: 19px;
+}
+
 .images {
     width: 160px;
     margin: 20px auto 0px auto;
@@ -243,7 +247,7 @@ p {
     font-weight: normal;
     box-shadow: 0 0px 0px 0 rgba(0,0,0,0), 0 0px 0px 0 rgba(0,0,0,0);
     border-radius: 4px;
-    width: 8%;
+    width: 100px;
 }
 
 #button2:hover {
@@ -310,7 +314,7 @@ p {
     font-weight: normal;
     box-shadow: 0 0px 0px 0 rgba(0,0,0,0), 0 0px 0px 0 rgba(0,0,0,0);
     border-radius: 4px;
-    width: 8%;
+    width: 100px;
 }
 
 #result {
@@ -346,6 +350,12 @@ p {
     margin: 0px 0px -50px 0px;
 }
 
+@media only screen and (max-width: 600px) {
+    #testimonial-grid {
+        display: block;
+    }
+}
+
 /* Scarcity Section*/
 
 #scarcity {
@@ -369,17 +379,12 @@ p {
 #scarcity a {
     background-image: linear-gradient(90deg, #e24800, #fa9052);
     margin: 20px auto 20px auto ;
+    width: 100px;
 }
 
 #scarcity a:hover {
     background-image: linear-gradient(90deg, #e24800, #fa9052);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 2px 10px 0 rgba(0,0,0,0.19);
-}
-
-@media only screen and (max-width: 630px) {
-     #testimonial-grid p {
-        font-size: 0.75rem
-    }
 }
 
 /* Footer*/
