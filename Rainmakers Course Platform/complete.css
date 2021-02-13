@@ -1,0 +1,43 @@
+h1 {
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: normal;
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    background: #0163c5;
+    font-weight: normal;
+}
+
+p {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#main {
+    background-color:  #012346;
+}
+
+#link {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: white;
+    margin: 20px 0px 0px 0px;
+}
+
+#button {
+    color: white;
+    border-radius: 16px;
+    padding: 12px 24px;
+    margin: 20px 0px 0px 595px;
+}

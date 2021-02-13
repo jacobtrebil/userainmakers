@@ -1,64 +1,40 @@
-/* var scroll = window.requestAnimationFrame ||
-function(callback) {
-    window.setTimeout(callback, 1000/60)
-};
-var elementsToShow = document.getElementsByClassName('images');
+var vidBtn = document.getElementById('vidBtn');
+var soundBtn = document.getElementById('soundIcon');
+var vid = document.getElementById('video');
 
-function loop(){
-    elementsToShow.forEach(function (element) {
-        if(isElementInViewport(element)) {
-            element.classList.add(is-visible);
-        } else {
-            element.classList.remove('is-visible');
-        }
-    });
-    scroll(loop);
+vidBtn.addEventListener('click', startVid);
+soundBtn.addEventListener('click', startVid);
+// document.addEventListener('mouseout', onMouseOut)
+
+// Funtion To Start Video From Beginning
+function startVid() {
+    vid.muted = !vid.muted;
+    vid.loop = false;
+    vid.currentTime = 0;
+    vid.controls = true;
+    vidBtn.style.display = 'none';
+    soundBtn.style.display = 'none';
+    vid.style.pointerEvents = 'all';
 }
 
-loop();
+$(document).ready(function() {
 
-function isElementInViewport(el) {
-    // special bonus for those using jQuery
-    if (typeof jQuery === "function" && el instanceof jQuery) {
-      el = el[0];
-    }
-    var rect = el.getBoundingClientRect();
-    return (
-      (rect.top <= 0
-        && rect.bottom >= 0)
-      ||
-      (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.top <= (window.innerHeight || document.documentElement.clientHeight))
-      ||
-      (rect.top >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
-    );
-  } */
-
-  $(function(){  // $(document).ready shorthand
-    $('#images').fadeIn('slow');
-  });
-  
-  $(document).ready(function() {
-      
-      /* Every time the window is scrolled ... */
-      $(window).scroll( function(){
-      
-          /* Check the location of each desired element */
-          $('.images').each( function(i){
-              
-              var bottom_of_object = $(this).position().top + $(this).outerHeight();
-              var bottom_of_window = $(window).scrollTop() + $(window).height();
-              
-              /* If the object is completely visible in the window, fade it it */
-              if( bottom_of_window > bottom_of_object ){
-                  
-                  $(this).animate({'opacity':'1'},1500);
-                      
-              }
-              
-          }); 
-      
+    //Advisor Firm Images Fade In On Scroll
+  $(window).on("load",function() {
+    $(window).scroll(function() {
+      var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+      $(".fade-in-section").each(function() {
+        /* Check the location of each desired element */
+        var objectBottom = $(this).offset().top + $(this).outerHeight();
+        
+        /* If the element is completely within bounds of the window, fade it in */
+        if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+          if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+        } else { //object goes out of view (scrolling up)
+          if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+        }
       });
-      
+    }).scroll(); //invoke scroll-handler on page-load
   });
+
+});

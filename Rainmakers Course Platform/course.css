@@ -1,0 +1,244 @@
+h1 {
+    font-family: sans-serif;
+    font-size: 52px;
+    color: black;
+    text-align: center;
+    font-weight: 600;
+    margin: 0px 0px 20px 0px;
+    padding: 80px 0px 10px 0px;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-size: 28px;
+    color: black;
+    text-align: left;
+    font-weight: 500;
+    margin: 0px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
+}
+
+h3 {
+    margin: 40px 0px 0px 160px;
+    font-family: sans-serif;
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: normal;
+    color: black;
+}
+
+p {
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: black;
+}
+
+#logo {
+    margin: 0px 0px -20px 80px;
+    padding: 10px 0px -20px 0px;
+}
+
+#head {
+    background-color: white;
+    border-bottom: solid #BABABA 1px;
+    margin: 0px -10px 0px -10px;
+    padding: 10px 0px 20px 0px;
+}
+
+#banner {
+    background-color: #E8F0FE;
+    margin: 0px -10px 0px -10px;
+}
+
+#resume {
+    background-color: #0271E1;
+    border: none;
+    color: white;
+    padding: 18px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: normal;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 128px;
+    margin: 0px 0px 80px 645px;
+}
+
+#resume:hover {
+    background-color: #469aee;
+    Box-shadow: 0 0px 0px 0 rgba(0,0,0,0), 0 0px 0px 0 rgba(0,0,0,0);
+}
+
+.credentials {
+    border: #a7a7a7 solid 1px;
+    border-radius: 16px;
+    padding: 0px 60px 0px 60px;
+    margin: -60px 120px 0px 10px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.credentials #average {
+    border-bottom: #a7a7a7 solid 1px;
+    padding: 10px 0px 10px 0px;
+    margin: 0px -60px 0px -60px;
+}
+
+.credentials #time {
+    padding: 10px 0px 20px 0px;
+}
+
+.credentials #earn {
+    border-bottom: #a7a7a7 solid 1px;
+    padding: 10px 0px 10px 0px;
+    margin: 0px -60px 0px -60px;
+}
+
+.credentials #generate {
+    border-bottom:#a7a7a7 solid 1px;
+    padding: 10px 0px 10px 0px;
+    margin: 0px -60px 0px -60px;
+}
+
+.credentials p {
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    margin: 0px;
+}
+
+.credentials h5 {
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+#support {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: black;
+    text-align: left;
+    font-weight: 500;
+    font-weight: normal;
+    margin: 0px 0px 0px 950px;
+    padding: 5px 0px 0px 0px;
+    text-decoration: none;
+}
+
+#support:hover {
+    text-decoration: underline;
+}
+
+#top-resume {
+    background-color: #0271E1;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: normal;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 128px;
+    margin: 0px 0px 0px 40px;
+}
+
+#top-resume:hover {
+    background-color: #469aee;
+    Box-shadow: 0 0px 0px 0 rgba(0,0,0,0), 0 0px 0px 0 rgba(0,0,0,0);
+}
+
+#footer {
+    border-top: black 1px solid;
+    padding: 15px 20px 10px 20px;
+    margin: 600px -10px 0px -10px;
+}
+
+#footer a {
+    text-decoration: none;
+}
+
+#copyright {
+    margin: 0px 60px 0px 860px;
+}
+
+#terms {
+    margin: 0px 20px 0px 0px;
+    text-decoration: none;
+}
+
+#privacy {
+    margin: 0px 0px 0px 60px;
+    text-decoration: none;
+}
+
+#privacy:hover {
+    text-decoration: underline; 
+}
+
+#first {
+    margin: 60px 0px 0px 160px;
+}
+
+#terms:hover {
+    text-decoration: underline;
+}
+
+#content {
+    margin: 0px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
+}
+
+.Home {
+    font-family: sans-serif;
+    font-size: 32px;
+    color: black;
+    text-align: left;
+    font-weight: 500;
+    font-weight: bold;
+    margin: 20px 0px 0px 0px;
+    padding: 0px 0px 0px 40px;
+    text-decoration: none;
+}
+
+.Home:hover {
+    text-decoration: underline;
+}
+
+#overview {
+    margin: 0px 0px 0px 60px;
+}
+
+.paragraph {
+    margin: 20px 0px 0px 160px;
+    font-size: 20px;
+}
+
+.bottom {
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: normal;
+    color: black;
+}
+
+#arrow {
+    text-decoration: none;
+    text-align: center;
+}
+
+#arrow:hover {
+    text-decoration: underline black;
+}

@@ -9,7 +9,7 @@ html {
 /* Header */
 
 #logo {
-    margin: 13px 0px 0px 15px;
+    margin: 10px 0px 0px 30px;
 }
 
 header #logo3 {
@@ -25,7 +25,8 @@ header #logo3 {
 }
 
 #button {
-    /* background-image: linear-gradient(90deg,#0271E1, #3a98fc); */
+    /* background-image: linear-gradient(90deg, #ff1008, #e91710); */
+    /* background-image: linear-gradient(90deg, #0271E1, #429df8); */
     background-image: linear-gradient(90deg, #e24800, #fa9052);
     border: none;
     color: white;
@@ -36,7 +37,7 @@ header #logo3 {
     font-weight: normal;
     box-shadow: 0 0px 0px 0 rgba(0,0,0,0), 0 0px 0px 0 rgba(0,0,0,0);
     border-radius: 4px;
-    margin: 13px 90px 0px 0px;
+    margin: 13px 100px 0px 0px;
     display: inline-block;
 }
 
@@ -44,13 +45,14 @@ header #logo3 {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 2px 10px 0 rgba(0,0,0,0.19);
     /* background-image: linear-gradient(90deg, #0271E1, #3a98fc); */
     background-image: linear-gradient(90deg, #e24800, #fa9052);
+    /* background-image: linear-gradient(90deg, #e20800, #ff0800); */
     text-decoration: none;
 }
 
 nav a {
     color: black;
     text-decoration: none;
-    padding-right: 75px;
+    padding-right: 80px;
     display: inline-flex;
     justify-content: space-around;
 }
@@ -71,7 +73,7 @@ header {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 2px 10px 0 rgba(0,0,0,0.19);
 }
 
-@media only screen and (min-width: 350px) and (max-width: 885px) {
+@media only screen and (min-width: 350px) and (max-width: 1100px) {
     .nav1 {
         display: none;
     }
@@ -90,7 +92,8 @@ header {
 #main {
     padding: 50px 0px 50px 0px;
     margin: 50px -20px 20px -10px;
-    background-color: #b3d4f7;
+    /* background-color: #b3d4f7; */
+    background-color: #F9FAFA;
     background-repeat: no-repeat;
     background-attachment: fixed;
     opacity: 1;
@@ -99,6 +102,56 @@ header {
     border-bottom-left-radius:0;
     border-bottom-right-radius:25%;
     align-items: center;
+}
+
+#vidBtn {
+    width: 11%;
+    opacity: 90%;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0px auto;
+    display: block;
+}
+
+#vidBtn:hover {
+    opacity: 80%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+
+#soundIcon {
+    width: 12%;
+    opacity: 100%;
+    z-index: 10;
+    position: absolute;
+    top: 32%;
+    left: 45%;
+    right: 0;
+    margin: 0px auto;
+    display: block;
+    animation: magnified 2s infinite;
+}
+
+
+@keyframes magnified{
+    0%{
+    transform: scale(1.1,1.1);
+    }
+    50%{
+    transform: scale(1,1);
+    }
+    100%{
+    transform: scale(1.1,1.1);
+    }
+    }
+
+
+#soundIcon:hover {
+    opacity: 80%;
+    cursor: pointer;
 }
 
 #calendly {
@@ -111,16 +164,19 @@ header {
 
 #main p {
     color: black;
+    font-size: 20px;
 }
 
 #video {
-    padding: 20px 0px 80px 0px;
-    margin: 0px auto;
-    width: 50%;
+    padding: 0px 0px 0px 0px;
+    margin: 20px auto 80px auto;
+    width: 60%;
     height: 50%;
     position: relative;
     max-width: 900px;
     display: block;
+    border: 1px black solid;
+    border-right: 1px black solid;
 }
 
 #wistia {
@@ -220,10 +276,10 @@ p {
     margin-top: 19px;
 }
 
-.images {
+.fade-in-section {
     width: 160px;
     margin: 20px auto 0px auto;
-    visibility: 0;
+    display: block;
 }
 
 #case-studies {
@@ -238,21 +294,23 @@ p {
     margin: -60px auto 10px auto;
     display: block;
     background-image: linear-gradient(90deg, #e24800, #fa9052);
+    /* background-image: linear-gradient(90deg, #0271E1, #429df8); */
     border: none;
     color: white;
-    padding: 18px 28px;
+    padding: 30px 34px;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: normal;
     box-shadow: 0 0px 0px 0 rgba(0,0,0,0), 0 0px 0px 0 rgba(0,0,0,0);
     border-radius: 4px;
-    width: 100px;
+    width: 160px;
 }
 
 #button2:hover {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 2px 10px 0 rgba(0,0,0,0.19);
     background-image: linear-gradient(90deg, #e24800, #fa9052);
+    /* background-image: linear-gradient(90deg, #0271E1, #429df8); */
     text-decoration: none;
 }
 
@@ -305,16 +363,17 @@ p {
     margin: 60px auto 10px auto;
     display: block;
     background-image: linear-gradient(90deg, #e24800, #fa9052);
+    /* background-image: linear-gradient(90deg, #0271E1, #429df8); */
     border: none;
     color: white;
-    padding: 18px 28px;
+    padding: 30px 34px;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: normal;
     box-shadow: 0 0px 0px 0 rgba(0,0,0,0), 0 0px 0px 0 rgba(0,0,0,0);
     border-radius: 4px;
-    width: 100px;
+    width: 160px;
 }
 
 #result {
@@ -325,6 +384,7 @@ p {
 #button3:hover {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 2px 10px 0 rgba(0,0,0,0.19);
     background-image: linear-gradient(90deg, #e24800, #fa9052);
+    /* background-image: linear-gradient(90deg, #0271E1, #429df8); */
     text-decoration: none;
 }
 
@@ -338,6 +398,10 @@ p {
     grid-gap: 40px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1;
+}
+
+.video-testimonial {
+    width: 100%;
 }
 
 .names {
@@ -361,7 +425,8 @@ p {
 #scarcity {
     padding: 60px 0px 60px 0px;
     margin: 100px -10px 20px -10px;
-    background-color: #b3d4f7;
+    /* background-color: #b3d4f7; */
+    background-color: #F9FAFA;
     opacity: 1;
     /* border-top-left-radius:25%; */
     /* border-bottom-right-radius:25%; */
@@ -378,12 +443,14 @@ p {
 
 #scarcity a {
     background-image: linear-gradient(90deg, #e24800, #fa9052);
+    /* background-image: linear-gradient(90deg, #0271E1, #429df8); */
     margin: 20px auto 20px auto ;
-    width: 100px;
+    width: 160px;
 }
 
 #scarcity a:hover {
-    background-image: linear-gradient(90deg, #e24800, #fa9052);
+    background-image: linear-gradient(90deg, #e24800, #fa9052); 
+    /* background-image: linear-gradient(90deg, #0271E1, #429df8); */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 2px 10px 0 rgba(0,0,0,0.19);
 }
 
