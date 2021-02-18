@@ -1,9 +1,11 @@
 var vidBtn = document.getElementById('vidBtn');
 var soundBtn = document.getElementById('soundIcon');
 var vid = document.getElementById('video');
+// var hamburger = document.getElementById('hamburger');
 
 vidBtn.addEventListener('click', startVid);
 soundBtn.addEventListener('click', startVid);
+// hamburger.addEventListener('click', showMenu);
 // document.addEventListener('mouseout', onMouseOut)
 
 // Funtion To Start Video From Beginning
@@ -17,7 +19,15 @@ function startVid() {
     vid.style.pointerEvents = 'all';
 }
 
+// Function To Show The Menu
+
+
+
 $(document).ready(function() {
+
+  $('.menu').on('click', () => {
+    $('.nav-menu').toggleClass('hide');
+  });
 
     //Advisor Firm Images Fade In On Scroll
   $(window).on("load",function() {
